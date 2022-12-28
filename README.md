@@ -2,10 +2,10 @@
 Create a service in Linux
 
 # Enable a service 
-systemctl enable <your-service-name>
+systemctl enable tb_mqtt.service
 
 # Start a service 
-systemctl start <your-service-name>
+systemctl start tb_mqtt.service
 
 # stop a service 
-systemctl start <your-service-name>
+systemctl start tb_mqtt.service
