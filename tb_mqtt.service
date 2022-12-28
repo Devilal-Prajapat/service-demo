@@ -1,0 +1,16 @@
+[Unit]
+
+Description=tb_mqtt connect service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /home/pi/tb_mqtt_start.sh
+ExecStop=/bin/bash /home/pi/tb_mqtt_stop.sh
+Restart=always
+RestartSec=5
+TimeoutSec=60
+RuntimeMaxSec=infinity
+
+[Install]
+WantedBy=multi-user.target
